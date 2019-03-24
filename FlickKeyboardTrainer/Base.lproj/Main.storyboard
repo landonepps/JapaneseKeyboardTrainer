@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.68" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -13,25 +13,42 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SwipeKeyboardTrainer" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FlickKeyboardTrainer" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lH6-a3-M1T">
-                                <rect key="frame" x="0.0" y="376" width="375" height="291"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UF8-uV-a1W" userLabel="TopView">
+                                <rect key="frame" x="0.0" y="44" width="375" height="476"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gcA-oG-lg1">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="あ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qah-TK-Sde">
+                                        <rect key="frame" x="87" y="118.66666666666666" width="201" height="238.99999999999997"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="200"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="qah-TK-Sde" firstAttribute="centerY" secondItem="UF8-uV-a1W" secondAttribute="centerY" id="bNA-9o-PCI"/>
+                                    <constraint firstItem="qah-TK-Sde" firstAttribute="centerX" secondItem="UF8-uV-a1W" secondAttribute="centerX" id="hce-zD-NkK"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lH6-a3-M1T" userLabel="BottomView">
+                                <rect key="frame" x="0.0" y="520" width="375" height="292"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gcA-oG-lg1" userLabel="KeyboardView">
                                         <rect key="frame" x="3" y="6" width="369" height="206"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gYx-Mv-TMn" customClass="KeyboardButton" customModule="SwipeKeyboardTrainer" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gYx-Mv-TMn" customClass="KeyboardButton" customModule="FlickKeyboardTrainer" customModuleProvider="target">
                                                 <rect key="frame" x="75" y="0.0" width="69" height="46"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" name="keyColor"/>
-                                                <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="23"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="46" id="Svm-ur-ji8"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="24"/>
+                                                <size key="titleShadowOffset" width="0.0" height="1"/>
                                                 <state key="normal" title="あ">
-                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="titleColor" name="darkText"/>
                                                 </state>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -41,20 +58,20 @@
                                                         <real key="value" value="1"/>
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                                        <color key="value" red="0.3411764705882353" green="0.37647058823529411" blue="0.43529411764705883" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <color key="value" name="mediumBackground"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
                                                     <action selector="keyboardButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iZI-ub-r64"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lkM-Yn-wpp" customClass="KeyboardButton" customModule="SwipeKeyboardTrainer" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lkM-Yn-wpp" customClass="KeyboardButton" customModule="FlickKeyboardTrainer" customModuleProvider="target">
                                                 <rect key="frame" x="150" y="0.0" width="69" height="46"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" name="keyColor"/>
-                                                <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="23"/>
+                                                <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="24"/>
+                                                <size key="titleShadowOffset" width="0.0" height="1"/>
                                                 <state key="normal" title="か">
-                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="titleColor" name="darkText"/>
                                                 </state>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -64,20 +81,20 @@
                                                         <real key="value" value="1"/>
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                                        <color key="value" red="0.3411764705882353" green="0.37647058823529411" blue="0.43529411764705883" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <color key="value" name="mediumBackground"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
                                                     <action selector="keyboardButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8IF-Re-OVq"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zcX-uF-jkK" customClass="KeyboardButton" customModule="SwipeKeyboardTrainer" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zcX-uF-jkK" customClass="KeyboardButton" customModule="FlickKeyboardTrainer" customModuleProvider="target">
                                                 <rect key="frame" x="225" y="0.0" width="69" height="46"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" name="keyColor"/>
-                                                <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="23"/>
+                                                <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="24"/>
+                                                <size key="titleShadowOffset" width="0.0" height="1"/>
                                                 <state key="normal" title="さ">
-                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="titleColor" name="darkText"/>
                                                 </state>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -87,20 +104,20 @@
                                                         <real key="value" value="1"/>
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                                        <color key="value" red="0.3411764705882353" green="0.37647058823529411" blue="0.43529411764705883" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <color key="value" name="mediumBackground"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
                                                     <action selector="keyboardButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rul-GH-QZR"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GB9-ce-uc1" customClass="KeyboardButton" customModule="SwipeKeyboardTrainer" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GB9-ce-uc1" customClass="KeyboardButton" customModule="FlickKeyboardTrainer" customModuleProvider="target">
                                                 <rect key="frame" x="75" y="53" width="69" height="46"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" name="keyColor"/>
-                                                <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="23"/>
+                                                <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="24"/>
+                                                <size key="titleShadowOffset" width="0.0" height="1"/>
                                                 <state key="normal" title="た">
-                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="titleColor" name="darkText"/>
                                                 </state>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -110,20 +127,20 @@
                                                         <real key="value" value="1"/>
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                                        <color key="value" red="0.3411764705882353" green="0.37647058823529411" blue="0.43529411764705883" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <color key="value" name="mediumBackground"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
                                                     <action selector="keyboardButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zNs-ao-16E"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B5P-ty-P8h" customClass="KeyboardButton" customModule="SwipeKeyboardTrainer" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B5P-ty-P8h" customClass="KeyboardButton" customModule="FlickKeyboardTrainer" customModuleProvider="target">
                                                 <rect key="frame" x="150" y="53" width="69" height="46"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" name="keyColor"/>
-                                                <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="23"/>
+                                                <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="24"/>
+                                                <size key="titleShadowOffset" width="0.0" height="1"/>
                                                 <state key="normal" title="な">
-                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="titleColor" name="darkText"/>
                                                 </state>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -133,20 +150,20 @@
                                                         <real key="value" value="1"/>
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                                        <color key="value" red="0.3411764705882353" green="0.37647058823529411" blue="0.43529411764705883" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <color key="value" name="mediumBackground"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
                                                     <action selector="keyboardButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kdH-E7-0td"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p7b-q1-hAQ" customClass="KeyboardButton" customModule="SwipeKeyboardTrainer" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p7b-q1-hAQ" customClass="KeyboardButton" customModule="FlickKeyboardTrainer" customModuleProvider="target">
                                                 <rect key="frame" x="225" y="53" width="69" height="46"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" name="keyColor"/>
-                                                <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="23"/>
+                                                <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="24"/>
+                                                <size key="titleShadowOffset" width="0.0" height="1"/>
                                                 <state key="normal" title="は">
-                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="titleColor" name="darkText"/>
                                                 </state>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -156,20 +173,20 @@
                                                         <real key="value" value="1"/>
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                                        <color key="value" red="0.3411764705882353" green="0.37647058823529411" blue="0.43529411764705883" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <color key="value" name="mediumBackground"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
                                                     <action selector="keyboardButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IEX-kZ-fk9"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZDQ-D0-Gg3" customClass="KeyboardButton" customModule="SwipeKeyboardTrainer" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZDQ-D0-Gg3" customClass="KeyboardButton" customModule="FlickKeyboardTrainer" customModuleProvider="target">
                                                 <rect key="frame" x="75" y="106" width="69" height="47"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" name="keyColor"/>
-                                                <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="23"/>
+                                                <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="24"/>
+                                                <size key="titleShadowOffset" width="0.0" height="1"/>
                                                 <state key="normal" title="ま">
-                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="titleColor" name="darkText"/>
                                                 </state>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -179,20 +196,20 @@
                                                         <real key="value" value="1"/>
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                                        <color key="value" red="0.3411764705882353" green="0.37647058823529411" blue="0.43529411764705883" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <color key="value" name="mediumBackground"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
                                                     <action selector="keyboardButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RAf-w5-nfV"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nd4-Wq-78p" customClass="KeyboardButton" customModule="SwipeKeyboardTrainer" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nd4-Wq-78p" customClass="KeyboardButton" customModule="FlickKeyboardTrainer" customModuleProvider="target">
                                                 <rect key="frame" x="150" y="106" width="69" height="47"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" name="keyColor"/>
-                                                <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="23"/>
+                                                <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="24"/>
+                                                <size key="titleShadowOffset" width="0.0" height="1"/>
                                                 <state key="normal" title="や">
-                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="titleColor" name="darkText"/>
                                                 </state>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -202,20 +219,20 @@
                                                         <real key="value" value="1"/>
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                                        <color key="value" red="0.3411764705882353" green="0.37647058823529411" blue="0.43529411764705883" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <color key="value" name="mediumBackground"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
                                                     <action selector="keyboardButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LX0-JE-zqN"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DaV-sD-Pm7" customClass="KeyboardButton" customModule="SwipeKeyboardTrainer" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DaV-sD-Pm7" customClass="KeyboardButton" customModule="FlickKeyboardTrainer" customModuleProvider="target">
                                                 <rect key="frame" x="225" y="106" width="69" height="47"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" name="keyColor"/>
-                                                <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="23"/>
+                                                <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="24"/>
+                                                <size key="titleShadowOffset" width="0.0" height="1"/>
                                                 <state key="normal" title="ら">
-                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="titleColor" name="darkText"/>
                                                 </state>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -225,20 +242,20 @@
                                                         <real key="value" value="1"/>
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                                        <color key="value" red="0.3411764705882353" green="0.37647058823529411" blue="0.43529411764705883" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <color key="value" name="mediumBackground"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
                                                     <action selector="keyboardButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Gyo-s4-1Z8"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7b7-I2-1U0" customClass="KeyboardButton" customModule="SwipeKeyboardTrainer" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7b7-I2-1U0" customClass="KeyboardButton" customModule="FlickKeyboardTrainer" customModuleProvider="target">
                                                 <rect key="frame" x="150" y="160" width="69" height="46"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" name="keyColor"/>
-                                                <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="23"/>
+                                                <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="24"/>
+                                                <size key="titleShadowOffset" width="0.0" height="1"/>
                                                 <state key="normal" title="わ">
-                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="titleColor" name="darkText"/>
                                                 </state>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -248,20 +265,20 @@
                                                         <real key="value" value="1"/>
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                                        <color key="value" red="0.3411764705882353" green="0.37647058823529411" blue="0.43529411764705883" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <color key="value" name="mediumBackground"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
                                                     <action selector="keyboardButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QS0-r6-RbT"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vXn-V7-RtG" customClass="KeyboardButton" customModule="SwipeKeyboardTrainer" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vXn-V7-RtG" customClass="KeyboardButton" customModule="FlickKeyboardTrainer" customModuleProvider="target">
                                                 <rect key="frame" x="75" y="160" width="69" height="46"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" name="disabledKeyColor"/>
                                                 <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="18"/>
+                                                <size key="titleShadowOffset" width="0.0" height="1"/>
                                                 <state key="normal" title="^_^">
-                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="titleColor" name="disabledTextColor"/>
                                                 </state>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -275,13 +292,13 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aga-Mr-4gy" customClass="KeyboardButton" customModule="SwipeKeyboardTrainer" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aga-Mr-4gy" customClass="KeyboardButton" customModule="FlickKeyboardTrainer" customModuleProvider="target">
                                                 <rect key="frame" x="225" y="160" width="69" height="46"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" name="disabledKeyColor"/>
                                                 <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="18"/>
+                                                <size key="titleShadowOffset" width="0.0" height="1"/>
                                                 <state key="normal" title="､｡?!">
-                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="titleColor" name="disabledTextColor"/>
                                                 </state>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -295,13 +312,13 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nVC-Gp-ULX" customClass="KeyboardButton" customModule="SwipeKeyboardTrainer" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nVC-Gp-ULX" customClass="KeyboardButton" customModule="FlickKeyboardTrainer" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="69" height="46"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" name="disabledKeyColor"/>
                                                 <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="16"/>
+                                                <size key="titleShadowOffset" width="0.0" height="1"/>
                                                 <state key="normal" title="☆123">
-                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="titleColor" name="disabledTextColor"/>
                                                 </state>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -315,13 +332,13 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YKy-yu-VSq" customClass="KeyboardButton" customModule="SwipeKeyboardTrainer" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YKy-yu-VSq" customClass="KeyboardButton" customModule="FlickKeyboardTrainer" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="53" width="69" height="46"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" name="disabledKeyColor"/>
                                                 <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="16"/>
+                                                <size key="titleShadowOffset" width="0.0" height="1"/>
                                                 <state key="normal" title="ABC">
-                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="titleColor" name="disabledTextColor"/>
                                                 </state>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -335,13 +352,13 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GH1-az-6rI" customClass="KeyboardButton" customModule="SwipeKeyboardTrainer" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GH1-az-6rI" customClass="KeyboardButton" customModule="FlickKeyboardTrainer" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="106" width="69" height="100"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" name="disabledKeyColor"/>
                                                 <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="16"/>
+                                                <size key="titleShadowOffset" width="0.0" height="1"/>
                                                 <state key="normal" title="あいう">
-                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="titleColor" name="disabledTextColor"/>
                                                 </state>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -355,13 +372,13 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kIq-6v-T1n" customClass="KeyboardButton" customModule="SwipeKeyboardTrainer" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kIq-6v-T1n" customClass="KeyboardButton" customModule="FlickKeyboardTrainer" customModuleProvider="target">
                                                 <rect key="frame" x="300" y="0.0" width="69" height="46"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" name="disabledKeyColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <size key="titleShadowOffset" width="0.0" height="1"/>
                                                 <state key="normal" title="⌫">
-                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="titleColor" name="disabledTextColor"/>
                                                 </state>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -375,13 +392,13 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lmB-DV-C3r" customClass="KeyboardButton" customModule="SwipeKeyboardTrainer" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lmB-DV-C3r" customClass="KeyboardButton" customModule="FlickKeyboardTrainer" customModuleProvider="target">
                                                 <rect key="frame" x="300" y="53" width="69" height="46"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" name="disabledKeyColor"/>
                                                 <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="16"/>
+                                                <size key="titleShadowOffset" width="0.0" height="1"/>
                                                 <state key="normal" title="空白">
-                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="titleColor" name="disabledTextColor"/>
                                                 </state>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -395,13 +412,13 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dZE-hg-Ezg" customClass="KeyboardButton" customModule="SwipeKeyboardTrainer" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dZE-hg-Ezg" customClass="KeyboardButton" customModule="FlickKeyboardTrainer" customModuleProvider="target">
                                                 <rect key="frame" x="300" y="106" width="69" height="100"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" name="disabledKeyColor"/>
                                                 <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="18"/>
+                                                <size key="titleShadowOffset" width="0.0" height="1"/>
                                                 <state key="normal" title="改行">
-                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="titleColor" name="disabledTextColor"/>
                                                 </state>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -416,36 +433,119 @@
                                                 </userDefinedRuntimeAttributes>
                                             </button>
                                         </subviews>
+                                        <constraints>
+                                            <constraint firstItem="lmB-DV-C3r" firstAttribute="width" secondItem="nVC-Gp-ULX" secondAttribute="width" id="039-UC-b8D"/>
+                                            <constraint firstItem="vXn-V7-RtG" firstAttribute="top" secondItem="ZDQ-D0-Gg3" secondAttribute="bottom" constant="7" id="2Y5-ex-PfX"/>
+                                            <constraint firstItem="aga-Mr-4gy" firstAttribute="top" secondItem="DaV-sD-Pm7" secondAttribute="bottom" constant="7" id="3nd-zh-TEV"/>
+                                            <constraint firstItem="dZE-hg-Ezg" firstAttribute="width" secondItem="nVC-Gp-ULX" secondAttribute="width" id="4K4-zb-H6G"/>
+                                            <constraint firstItem="ZDQ-D0-Gg3" firstAttribute="leading" secondItem="GH1-az-6rI" secondAttribute="trailing" constant="6" id="4Wg-Ti-jF6"/>
+                                            <constraint firstItem="B5P-ty-P8h" firstAttribute="width" secondItem="nVC-Gp-ULX" secondAttribute="width" id="67d-s1-Zty"/>
+                                            <constraint firstItem="B5P-ty-P8h" firstAttribute="height" secondItem="nVC-Gp-ULX" secondAttribute="height" id="6AH-ch-hUp"/>
+                                            <constraint firstItem="dZE-hg-Ezg" firstAttribute="leading" secondItem="aga-Mr-4gy" secondAttribute="trailing" constant="6" id="6Z4-A6-odb"/>
+                                            <constraint firstItem="lkM-Yn-wpp" firstAttribute="leading" secondItem="gYx-Mv-TMn" secondAttribute="trailing" constant="6" id="6dx-Ze-24u"/>
+                                            <constraint firstItem="YKy-yu-VSq" firstAttribute="width" secondItem="nVC-Gp-ULX" secondAttribute="width" id="8YW-Kw-ESK"/>
+                                            <constraint firstItem="kIq-6v-T1n" firstAttribute="height" secondItem="nVC-Gp-ULX" secondAttribute="height" id="969-hI-NVJ"/>
+                                            <constraint firstItem="p7b-q1-hAQ" firstAttribute="leading" secondItem="B5P-ty-P8h" secondAttribute="trailing" constant="6" id="9t1-tX-ZUs"/>
+                                            <constraint firstItem="GH1-az-6rI" firstAttribute="height" secondItem="YKy-yu-VSq" secondAttribute="height" multiplier="2" constant="8" id="Anx-j1-o7Z"/>
+                                            <constraint firstItem="zcX-uF-jkK" firstAttribute="leading" secondItem="lkM-Yn-wpp" secondAttribute="trailing" constant="6" id="B4U-cD-rpZ"/>
+                                            <constraint firstItem="dZE-hg-Ezg" firstAttribute="leading" secondItem="DaV-sD-Pm7" secondAttribute="trailing" constant="6" id="B5b-KF-zNS"/>
+                                            <constraint firstItem="dZE-hg-Ezg" firstAttribute="width" secondItem="GH1-az-6rI" secondAttribute="width" id="Bjj-aS-IWV"/>
+                                            <constraint firstItem="nVC-Gp-ULX" firstAttribute="top" secondItem="gcA-oG-lg1" secondAttribute="top" id="DW9-1k-3Mp"/>
+                                            <constraint firstAttribute="bottom" secondItem="7b7-I2-1U0" secondAttribute="bottom" id="Dns-ij-s8t"/>
+                                            <constraint firstItem="ZDQ-D0-Gg3" firstAttribute="width" secondItem="nVC-Gp-ULX" secondAttribute="width" id="En3-SP-dJk"/>
+                                            <constraint firstAttribute="bottom" secondItem="aga-Mr-4gy" secondAttribute="bottom" id="EqG-c6-EKJ"/>
+                                            <constraint firstItem="vXn-V7-RtG" firstAttribute="height" secondItem="nVC-Gp-ULX" secondAttribute="height" id="F4g-T6-g3a"/>
+                                            <constraint firstItem="DaV-sD-Pm7" firstAttribute="top" secondItem="p7b-q1-hAQ" secondAttribute="bottom" constant="7" id="FTE-7T-GUH"/>
+                                            <constraint firstItem="gYx-Mv-TMn" firstAttribute="leading" secondItem="nVC-Gp-ULX" secondAttribute="trailing" constant="6" id="HHA-gg-aNT"/>
+                                            <constraint firstItem="GH1-az-6rI" firstAttribute="top" secondItem="YKy-yu-VSq" secondAttribute="bottom" constant="7" id="HWX-Ya-2oX"/>
+                                            <constraint firstItem="gYx-Mv-TMn" firstAttribute="width" secondItem="nVC-Gp-ULX" secondAttribute="width" id="IX3-Na-i8B"/>
+                                            <constraint firstItem="GB9-ce-uc1" firstAttribute="height" secondItem="nVC-Gp-ULX" secondAttribute="height" id="In6-8h-POt"/>
+                                            <constraint firstItem="GB9-ce-uc1" firstAttribute="width" secondItem="nVC-Gp-ULX" secondAttribute="width" id="JGb-FO-kLZ"/>
+                                            <constraint firstItem="GB9-ce-uc1" firstAttribute="leading" secondItem="YKy-yu-VSq" secondAttribute="trailing" constant="6" id="KkJ-a3-5bo"/>
+                                            <constraint firstItem="DaV-sD-Pm7" firstAttribute="height" secondItem="ZDQ-D0-Gg3" secondAttribute="height" id="Mte-Vk-sfg"/>
+                                            <constraint firstItem="Nd4-Wq-78p" firstAttribute="height" secondItem="ZDQ-D0-Gg3" secondAttribute="height" id="Nuk-dk-0K4"/>
+                                            <constraint firstAttribute="bottom" secondItem="GH1-az-6rI" secondAttribute="bottom" id="O8J-pj-rnW"/>
+                                            <constraint firstItem="kIq-6v-T1n" firstAttribute="width" secondItem="nVC-Gp-ULX" secondAttribute="width" id="OJS-ez-H1y"/>
+                                            <constraint firstItem="lmB-DV-C3r" firstAttribute="height" secondItem="nVC-Gp-ULX" secondAttribute="height" id="Q1U-Ej-NRb"/>
+                                            <constraint firstItem="zcX-uF-jkK" firstAttribute="width" secondItem="nVC-Gp-ULX" secondAttribute="width" id="Qus-wd-HNM"/>
+                                            <constraint firstItem="zcX-uF-jkK" firstAttribute="height" secondItem="nVC-Gp-ULX" secondAttribute="height" id="R2y-a8-LfB"/>
+                                            <constraint firstItem="kIq-6v-T1n" firstAttribute="width" secondItem="nVC-Gp-ULX" secondAttribute="width" id="S6g-0R-FJK"/>
+                                            <constraint firstAttribute="trailing" secondItem="kIq-6v-T1n" secondAttribute="trailing" id="S7W-G6-0Cn"/>
+                                            <constraint firstItem="p7b-q1-hAQ" firstAttribute="top" secondItem="zcX-uF-jkK" secondAttribute="bottom" constant="7" id="Sv9-93-dz7"/>
+                                            <constraint firstItem="gYx-Mv-TMn" firstAttribute="width" secondItem="nVC-Gp-ULX" secondAttribute="width" id="T1M-7v-cCg"/>
+                                            <constraint firstItem="GH1-az-6rI" firstAttribute="leading" secondItem="gcA-oG-lg1" secondAttribute="leading" id="Tiy-Ai-lLj"/>
+                                            <constraint firstAttribute="trailing" secondItem="dZE-hg-Ezg" secondAttribute="trailing" id="UTp-x1-0XG"/>
+                                            <constraint firstItem="YKy-yu-VSq" firstAttribute="height" secondItem="nVC-Gp-ULX" secondAttribute="height" id="Uch-9a-PBh"/>
+                                            <constraint firstItem="7b7-I2-1U0" firstAttribute="width" secondItem="nVC-Gp-ULX" secondAttribute="width" id="Upm-lU-sXH"/>
+                                            <constraint firstItem="ZDQ-D0-Gg3" firstAttribute="top" secondItem="GB9-ce-uc1" secondAttribute="bottom" constant="7" id="Uqc-rL-5EI"/>
+                                            <constraint firstAttribute="trailing" secondItem="lmB-DV-C3r" secondAttribute="trailing" id="VE7-9x-rM1"/>
+                                            <constraint firstItem="kIq-6v-T1n" firstAttribute="top" secondItem="gcA-oG-lg1" secondAttribute="top" id="WQ2-GI-hpY"/>
+                                            <constraint firstItem="zcX-uF-jkK" firstAttribute="top" secondItem="gcA-oG-lg1" secondAttribute="top" id="XJu-ZW-EmQ"/>
+                                            <constraint firstItem="aga-Mr-4gy" firstAttribute="width" secondItem="nVC-Gp-ULX" secondAttribute="width" id="XJz-LC-wTH"/>
+                                            <constraint firstItem="lkM-Yn-wpp" firstAttribute="height" secondItem="nVC-Gp-ULX" secondAttribute="height" id="Ydf-up-Aj2"/>
+                                            <constraint firstItem="GB9-ce-uc1" firstAttribute="width" secondItem="nVC-Gp-ULX" secondAttribute="width" id="Yk1-Z5-Mcv"/>
+                                            <constraint firstItem="7b7-I2-1U0" firstAttribute="width" secondItem="nVC-Gp-ULX" secondAttribute="width" id="ZVA-wV-hwM"/>
+                                            <constraint firstItem="Nd4-Wq-78p" firstAttribute="width" secondItem="nVC-Gp-ULX" secondAttribute="width" id="a68-vb-tGi"/>
+                                            <constraint firstItem="GH1-az-6rI" firstAttribute="width" secondItem="nVC-Gp-ULX" secondAttribute="width" id="aBG-l7-aBP"/>
+                                            <constraint firstItem="aga-Mr-4gy" firstAttribute="width" secondItem="nVC-Gp-ULX" secondAttribute="width" id="aJa-GS-7m8"/>
+                                            <constraint firstItem="kIq-6v-T1n" firstAttribute="leading" secondItem="zcX-uF-jkK" secondAttribute="trailing" constant="6" id="amI-dz-whc"/>
+                                            <constraint firstItem="vXn-V7-RtG" firstAttribute="leading" secondItem="GH1-az-6rI" secondAttribute="trailing" constant="6" id="b0g-dP-rdb"/>
+                                            <constraint firstItem="lmB-DV-C3r" firstAttribute="top" secondItem="kIq-6v-T1n" secondAttribute="bottom" constant="7" id="cXQ-RP-yei"/>
+                                            <constraint firstItem="lkM-Yn-wpp" firstAttribute="width" secondItem="nVC-Gp-ULX" secondAttribute="width" id="d8W-ca-nMG"/>
+                                            <constraint firstItem="GB9-ce-uc1" firstAttribute="top" secondItem="gYx-Mv-TMn" secondAttribute="bottom" constant="7" id="ePs-3S-owh"/>
+                                            <constraint firstItem="vXn-V7-RtG" firstAttribute="width" secondItem="nVC-Gp-ULX" secondAttribute="width" id="fQT-BY-JdW"/>
+                                            <constraint firstItem="DaV-sD-Pm7" firstAttribute="width" secondItem="nVC-Gp-ULX" secondAttribute="width" id="frj-XR-KqK"/>
+                                            <constraint firstItem="dZE-hg-Ezg" firstAttribute="height" secondItem="GH1-az-6rI" secondAttribute="height" id="fzN-L5-L2V"/>
+                                            <constraint firstAttribute="bottom" secondItem="vXn-V7-RtG" secondAttribute="bottom" id="gWe-fn-2Dy"/>
+                                            <constraint firstItem="aga-Mr-4gy" firstAttribute="height" secondItem="nVC-Gp-ULX" secondAttribute="height" id="gmj-a5-oXN"/>
+                                            <constraint firstItem="lmB-DV-C3r" firstAttribute="leading" secondItem="p7b-q1-hAQ" secondAttribute="trailing" constant="6" id="hIb-NX-tmY"/>
+                                            <constraint firstItem="p7b-q1-hAQ" firstAttribute="width" secondItem="nVC-Gp-ULX" secondAttribute="width" id="hT1-7I-Npc"/>
+                                            <constraint firstItem="dZE-hg-Ezg" firstAttribute="top" secondItem="lmB-DV-C3r" secondAttribute="bottom" constant="7" id="i7v-Kq-xbb"/>
+                                            <constraint firstItem="p7b-q1-hAQ" firstAttribute="height" secondItem="nVC-Gp-ULX" secondAttribute="height" id="iDJ-gb-PQt"/>
+                                            <constraint firstItem="DaV-sD-Pm7" firstAttribute="leading" secondItem="Nd4-Wq-78p" secondAttribute="trailing" constant="6" id="iP3-Lw-Yvv"/>
+                                            <constraint firstItem="p7b-q1-hAQ" firstAttribute="width" secondItem="nVC-Gp-ULX" secondAttribute="width" id="iVg-rM-9sx"/>
+                                            <constraint firstItem="B5P-ty-P8h" firstAttribute="top" secondItem="lkM-Yn-wpp" secondAttribute="bottom" constant="7" id="iXC-Rv-9pL"/>
+                                            <constraint firstItem="Nd4-Wq-78p" firstAttribute="leading" secondItem="ZDQ-D0-Gg3" secondAttribute="trailing" constant="6" id="kSX-KI-b6d"/>
+                                            <constraint firstItem="7b7-I2-1U0" firstAttribute="leading" secondItem="vXn-V7-RtG" secondAttribute="trailing" constant="6" id="ln7-mD-Ilo"/>
+                                            <constraint firstItem="7b7-I2-1U0" firstAttribute="height" secondItem="nVC-Gp-ULX" secondAttribute="height" id="lx7-Pr-EaV"/>
+                                            <constraint firstItem="B5P-ty-P8h" firstAttribute="leading" secondItem="GB9-ce-uc1" secondAttribute="trailing" constant="6" id="mH8-eD-Ed5"/>
+                                            <constraint firstItem="lmB-DV-C3r" firstAttribute="width" secondItem="nVC-Gp-ULX" secondAttribute="width" id="tNm-AZ-Qeh"/>
+                                            <constraint firstItem="gYx-Mv-TMn" firstAttribute="top" secondItem="gcA-oG-lg1" secondAttribute="top" id="uHO-eW-0LP"/>
+                                            <constraint firstItem="B5P-ty-P8h" firstAttribute="width" secondItem="nVC-Gp-ULX" secondAttribute="width" id="uOp-9C-aaP"/>
+                                            <constraint firstItem="YKy-yu-VSq" firstAttribute="leading" secondItem="gcA-oG-lg1" secondAttribute="leading" id="uU4-7b-JAy"/>
+                                            <constraint firstItem="zcX-uF-jkK" firstAttribute="width" secondItem="nVC-Gp-ULX" secondAttribute="width" id="uUn-u8-wyM"/>
+                                            <constraint firstItem="vXn-V7-RtG" firstAttribute="width" secondItem="nVC-Gp-ULX" secondAttribute="width" id="ude-db-W1f"/>
+                                            <constraint firstItem="lkM-Yn-wpp" firstAttribute="top" secondItem="gcA-oG-lg1" secondAttribute="top" id="vaa-aM-Edx"/>
+                                            <constraint firstItem="7b7-I2-1U0" firstAttribute="top" secondItem="Nd4-Wq-78p" secondAttribute="bottom" constant="7" id="vd5-3k-SUO"/>
+                                            <constraint firstItem="gYx-Mv-TMn" firstAttribute="height" secondItem="nVC-Gp-ULX" secondAttribute="height" id="wZT-c0-n3I"/>
+                                            <constraint firstItem="YKy-yu-VSq" firstAttribute="top" secondItem="nVC-Gp-ULX" secondAttribute="bottom" constant="7" id="wjO-Vb-ufs"/>
+                                            <constraint firstItem="nVC-Gp-ULX" firstAttribute="leading" secondItem="gcA-oG-lg1" secondAttribute="leading" id="wk5-q6-Vum"/>
+                                            <constraint firstItem="Nd4-Wq-78p" firstAttribute="top" secondItem="B5P-ty-P8h" secondAttribute="bottom" constant="7" id="wn3-xB-5bh"/>
+                                            <constraint firstItem="lkM-Yn-wpp" firstAttribute="width" secondItem="nVC-Gp-ULX" secondAttribute="width" id="wrN-P8-lgt"/>
+                                            <constraint firstItem="YKy-yu-VSq" firstAttribute="width" secondItem="nVC-Gp-ULX" secondAttribute="width" id="wwg-U5-Nd0"/>
+                                            <constraint firstAttribute="bottom" secondItem="dZE-hg-Ezg" secondAttribute="bottom" id="z2x-yl-9QC"/>
+                                            <constraint firstItem="aga-Mr-4gy" firstAttribute="leading" secondItem="7b7-I2-1U0" secondAttribute="trailing" constant="6" id="zWN-S0-5gJ"/>
+                                        </constraints>
                                     </view>
                                 </subviews>
                                 <color key="backgroundColor" name="darkBackground"/>
-                            </view>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UF8-uV-a1W">
-                                <rect key="frame" x="0.0" y="20" width="375" height="356"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="あ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qah-TK-Sde">
-                                        <rect key="frame" x="87" y="58.5" width="201" height="239"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="200"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
                                 <constraints>
-                                    <constraint firstItem="qah-TK-Sde" firstAttribute="centerX" secondItem="UF8-uV-a1W" secondAttribute="centerX" id="NyX-Be-zoX"/>
-                                    <constraint firstItem="qah-TK-Sde" firstAttribute="centerY" secondItem="UF8-uV-a1W" secondAttribute="centerY" id="zt2-dE-K2S"/>
+                                    <constraint firstItem="gcA-oG-lg1" firstAttribute="leading" secondItem="lH6-a3-M1T" secondAttribute="leading" constant="3" id="5rg-G5-1qZ"/>
+                                    <constraint firstAttribute="trailing" secondItem="gcA-oG-lg1" secondAttribute="trailing" constant="3" id="fRM-Gp-bUr"/>
+                                    <constraint firstItem="gcA-oG-lg1" firstAttribute="top" secondItem="lH6-a3-M1T" secondAttribute="top" constant="6" id="nsM-Dm-elH"/>
+                                    <constraint firstAttribute="bottom" secondItem="gcA-oG-lg1" secondAttribute="bottom" constant="80" id="unV-BT-Qbi"/>
                                 </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" name="mediumBackground"/>
                         <constraints>
-                            <constraint firstItem="UF8-uV-a1W" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="6fU-lF-Qwi"/>
-                            <constraint firstAttribute="bottom" secondItem="lH6-a3-M1T" secondAttribute="bottom" id="Fx0-UY-RdI"/>
-                            <constraint firstItem="UF8-uV-a1W" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="LKk-PZ-pRL"/>
-                            <constraint firstItem="lH6-a3-M1T" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Y1q-3D-BVd"/>
-                            <constraint firstItem="lH6-a3-M1T" firstAttribute="top" secondItem="UF8-uV-a1W" secondAttribute="bottom" id="hqf-Mb-DuZ"/>
-                            <constraint firstItem="lH6-a3-M1T" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="qlz-EY-ROd"/>
-                            <constraint firstItem="UF8-uV-a1W" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="rnZ-ll-Ndg"/>
-                            <constraint firstItem="lH6-a3-M1T" firstAttribute="top" secondItem="UF8-uV-a1W" secondAttribute="bottom" id="tGs-Q2-HmX"/>
+                            <constraint firstItem="UF8-uV-a1W" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="D5h-Dt-eWC"/>
+                            <constraint firstItem="lH6-a3-M1T" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Wsg-YE-so8"/>
+                            <constraint firstItem="UF8-uV-a1W" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Zdd-wY-hh5"/>
+                            <constraint firstItem="lH6-a3-M1T" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="cbe-Rl-fRh"/>
+                            <constraint firstItem="UF8-uV-a1W" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="qy3-dD-lbz"/>
+                            <constraint firstItem="lH6-a3-M1T" firstAttribute="top" secondItem="UF8-uV-a1W" secondAttribute="bottom" id="zSx-pU-sdQ"/>
+                            <constraint firstAttribute="bottom" secondItem="lH6-a3-M1T" secondAttribute="bottom" id="zTh-Yf-W27"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -455,15 +555,21 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="136.80000000000001" y="137.18140929535232"/>
+            <point key="canvasLocation" x="135.97122302158274" y="136.18090452261308"/>
         </scene>
     </scenes>
     <resources>
         <namedColor name="darkBackground">
             <color red="0.18431372549019609" green="0.20784313725490197" blue="0.25882352941176473" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
+        <namedColor name="darkText">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <namedColor name="disabledKeyColor">
             <color red="0.45490196078431372" green="0.49019607843137253" blue="0.5490196078431373" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="disabledTextColor">
+            <color red="0.18431372549019609" green="0.20784313725490197" blue="0.25882352941176473" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="keyColor">
             <color red="0.80784313725490198" green="0.83921568627450982" blue="0.8784313725490196" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

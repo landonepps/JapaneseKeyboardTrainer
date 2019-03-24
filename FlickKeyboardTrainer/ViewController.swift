@@ -27,7 +27,7 @@ class ViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     // Do any additional setup after loading the view.
-    changeCharacter()
+    setNewCharacter()
   }
 
   @IBAction func keyboardButtonPressed(_ sender: UIButton) {
@@ -56,7 +56,7 @@ class ViewController: UIViewController {
 
       DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
         self.currentCharacterLabel.textColor = UIColor(named: "lightText")!
-        self.changeCharacter()
+        self.setNewCharacter()
       }
     } else {
       // wrong answer
@@ -74,7 +74,7 @@ class ViewController: UIViewController {
 //    currentCharacterLabel.textColor = color
 //  }
   
-  func changeCharacter() {
+  func setNewCharacter() {
     // if there's only one left (or zero), reset the choices
     if listOfCharacterChoices.count <= 1 {
       listOfCharacterChoices = allCharacters
