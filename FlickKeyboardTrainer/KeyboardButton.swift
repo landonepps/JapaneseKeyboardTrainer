@@ -1,6 +1,6 @@
 //
 //  KeyboardButton.swift
-//  SwipeKeyboardTrainer
+//  FlickKeyboardTrainer
 //
 //  Created by Landon Epps on 3/23/19.
 //  Copyright © 2019 Landon Epps. All rights reserved.

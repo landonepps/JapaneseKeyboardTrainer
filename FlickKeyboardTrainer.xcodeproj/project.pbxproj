@@ -13,8 +13,8 @@
 		44C93E4E224516BD007A68ED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44C93E4C224516BD007A68ED /* Main.storyboard */; };
 		44C93E50224516BF007A68ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44C93E4F224516BF007A68ED /* Assets.xcassets */; };
 		44C93E53224516BF007A68ED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44C93E51224516BF007A68ED /* LaunchScreen.storyboard */; };
-		44C93E5E224516BF007A68ED /* SwipeKeyboardTrainerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44C93E5D224516BF007A68ED /* SwipeKeyboardTrainerTests.swift */; };
-		44C93E69224516BF007A68ED /* SwipeKeyboardTrainerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44C93E68224516BF007A68ED /* SwipeKeyboardTrainerUITests.swift */; };
+		44C93E5E224516BF007A68ED /* FlickKeyboardTrainerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44C93E5D224516BF007A68ED /* FlickKeyboardTrainerTests.swift */; };
+		44C93E69224516BF007A68ED /* FlickKeyboardTrainerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44C93E68224516BF007A68ED /* FlickKeyboardTrainerUITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,18 +36,18 @@
 
 /* Begin PBXFileReference section */
 		44032E0722460A3E0036D77C /* KeyboardButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardButton.swift; sourceTree = "<group>"; };
-		44C93E45224516BD007A68ED /* SwipeKeyboardTrainer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwipeKeyboardTrainer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		44C93E45224516BD007A68ED /* FlickKeyboardTrainer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlickKeyboardTrainer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		44C93E48224516BD007A68ED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		44C93E4A224516BD007A68ED /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		44C93E4D224516BD007A68ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		44C93E4F224516BF007A68ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		44C93E52224516BF007A68ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		44C93E54224516BF007A68ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		44C93E59224516BF007A68ED /* SwipeKeyboardTrainerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwipeKeyboardTrainerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		44C93E5D224516BF007A68ED /* SwipeKeyboardTrainerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeKeyboardTrainerTests.swift; sourceTree = "<group>"; };
+		44C93E59224516BF007A68ED /* FlickKeyboardTrainerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlickKeyboardTrainerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		44C93E5D224516BF007A68ED /* FlickKeyboardTrainerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickKeyboardTrainerTests.swift; sourceTree = "<group>"; };
 		44C93E5F224516BF007A68ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		44C93E64224516BF007A68ED /* SwipeKeyboardTrainerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwipeKeyboardTrainerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		44C93E68224516BF007A68ED /* SwipeKeyboardTrainerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeKeyboardTrainerUITests.swift; sourceTree = "<group>"; };
+		44C93E64224516BF007A68ED /* FlickKeyboardTrainerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlickKeyboardTrainerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		44C93E68224516BF007A68ED /* FlickKeyboardTrainerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickKeyboardTrainerUITests.swift; sourceTree = "<group>"; };
 		44C93E6A224516BF007A68ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -79,9 +79,9 @@
 		44C93E3C224516BD007A68ED = {
 			isa = PBXGroup;
 			children = (
-				44C93E47224516BD007A68ED /* SwipeKeyboardTrainer */,
-				44C93E5C224516BF007A68ED /* SwipeKeyboardTrainerTests */,
-				44C93E67224516BF007A68ED /* SwipeKeyboardTrainerUITests */,
+				44C93E47224516BD007A68ED /* FlickKeyboardTrainer */,
+				44C93E5C224516BF007A68ED /* FlickKeyboardTrainerTests */,
+				44C93E67224516BF007A68ED /* FlickKeyboardTrainerUITests */,
 				44C93E46224516BD007A68ED /* Products */,
 			);
 			sourceTree = "<group>";
@@ -89,14 +89,14 @@
 		44C93E46224516BD007A68ED /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				44C93E45224516BD007A68ED /* SwipeKeyboardTrainer.app */,
-				44C93E59224516BF007A68ED /* SwipeKeyboardTrainerTests.xctest */,
-				44C93E64224516BF007A68ED /* SwipeKeyboardTrainerUITests.xctest */,
+				44C93E45224516BD007A68ED /* FlickKeyboardTrainer.app */,
+				44C93E59224516BF007A68ED /* FlickKeyboardTrainerTests.xctest */,
+				44C93E64224516BF007A68ED /* FlickKeyboardTrainerUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		44C93E47224516BD007A68ED /* SwipeKeyboardTrainer */ = {
+		44C93E47224516BD007A68ED /* FlickKeyboardTrainer */ = {
 			isa = PBXGroup;
 			children = (
 				44C93E48224516BD007A68ED /* AppDelegate.swift */,
@@ -107,33 +107,33 @@
 				44C93E51224516BF007A68ED /* LaunchScreen.storyboard */,
 				44C93E54224516BF007A68ED /* Info.plist */,
 			);
-			path = SwipeKeyboardTrainer;
+			path = FlickKeyboardTrainer;
 			sourceTree = "<group>";
 		};
-		44C93E5C224516BF007A68ED /* SwipeKeyboardTrainerTests */ = {
+		44C93E5C224516BF007A68ED /* FlickKeyboardTrainerTests */ = {
 			isa = PBXGroup;
 			children = (
-				44C93E5D224516BF007A68ED /* SwipeKeyboardTrainerTests.swift */,
+				44C93E5D224516BF007A68ED /* FlickKeyboardTrainerTests.swift */,
 				44C93E5F224516BF007A68ED /* Info.plist */,
 			);
-			path = SwipeKeyboardTrainerTests;
+			path = FlickKeyboardTrainerTests;
 			sourceTree = "<group>";
 		};
-		44C93E67224516BF007A68ED /* SwipeKeyboardTrainerUITests */ = {
+		44C93E67224516BF007A68ED /* FlickKeyboardTrainerUITests */ = {
 			isa = PBXGroup;
 			children = (
-				44C93E68224516BF007A68ED /* SwipeKeyboardTrainerUITests.swift */,
+				44C93E68224516BF007A68ED /* FlickKeyboardTrainerUITests.swift */,
 				44C93E6A224516BF007A68ED /* Info.plist */,
 			);
-			path = SwipeKeyboardTrainerUITests;
+			path = FlickKeyboardTrainerUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		44C93E44224516BD007A68ED /* SwipeKeyboardTrainer */ = {
+		44C93E44224516BD007A68ED /* FlickKeyboardTrainer */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 44C93E6D224516BF007A68ED /* Build configuration list for PBXNativeTarget "SwipeKeyboardTrainer" */;
+			buildConfigurationList = 44C93E6D224516BF007A68ED /* Build configuration list for PBXNativeTarget "FlickKeyboardTrainer" */;
 			buildPhases = (
 				44C93E41224516BD007A68ED /* Sources */,
 				44C93E42224516BD007A68ED /* Frameworks */,
@@ -143,14 +143,14 @@
 			);
 			dependencies = (
 			);
-			name = SwipeKeyboardTrainer;
+			name = FlickKeyboardTrainer;
 			productName = SwipeKeyboardTrainer;
-			productReference = 44C93E45224516BD007A68ED /* SwipeKeyboardTrainer.app */;
+			productReference = 44C93E45224516BD007A68ED /* FlickKeyboardTrainer.app */;
 			productType = "com.apple.product-type.application";
 		};
-		44C93E58224516BF007A68ED /* SwipeKeyboardTrainerTests */ = {
+		44C93E58224516BF007A68ED /* FlickKeyboardTrainerTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 44C93E70224516BF007A68ED /* Build configuration list for PBXNativeTarget "SwipeKeyboardTrainerTests" */;
+			buildConfigurationList = 44C93E70224516BF007A68ED /* Build configuration list for PBXNativeTarget "FlickKeyboardTrainerTests" */;
 			buildPhases = (
 				44C93E55224516BF007A68ED /* Sources */,
 				44C93E56224516BF007A68ED /* Frameworks */,
@@ -161,14 +161,14 @@
 			dependencies = (
 				44C93E5B224516BF007A68ED /* PBXTargetDependency */,
 			);
-			name = SwipeKeyboardTrainerTests;
+			name = FlickKeyboardTrainerTests;
 			productName = SwipeKeyboardTrainerTests;
-			productReference = 44C93E59224516BF007A68ED /* SwipeKeyboardTrainerTests.xctest */;
+			productReference = 44C93E59224516BF007A68ED /* FlickKeyboardTrainerTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		44C93E63224516BF007A68ED /* SwipeKeyboardTrainerUITests */ = {
+		44C93E63224516BF007A68ED /* FlickKeyboardTrainerUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 44C93E73224516BF007A68ED /* Build configuration list for PBXNativeTarget "SwipeKeyboardTrainerUITests" */;
+			buildConfigurationList = 44C93E73224516BF007A68ED /* Build configuration list for PBXNativeTarget "FlickKeyboardTrainerUITests" */;
 			buildPhases = (
 				44C93E60224516BF007A68ED /* Sources */,
 				44C93E61224516BF007A68ED /* Frameworks */,
@@ -179,9 +179,9 @@
 			dependencies = (
 				44C93E66224516BF007A68ED /* PBXTargetDependency */,
 			);
-			name = SwipeKeyboardTrainerUITests;
+			name = FlickKeyboardTrainerUITests;
 			productName = SwipeKeyboardTrainerUITests;
-			productReference = 44C93E64224516BF007A68ED /* SwipeKeyboardTrainerUITests.xctest */;
+			productReference = 44C93E64224516BF007A68ED /* FlickKeyboardTrainerUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -207,7 +207,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 44C93E40224516BD007A68ED /* Build configuration list for PBXProject "SwipeKeyboardTrainer" */;
+			buildConfigurationList = 44C93E40224516BD007A68ED /* Build configuration list for PBXProject "FlickKeyboardTrainer" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -220,9 +220,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				44C93E44224516BD007A68ED /* SwipeKeyboardTrainer */,
-				44C93E58224516BF007A68ED /* SwipeKeyboardTrainerTests */,
-				44C93E63224516BF007A68ED /* SwipeKeyboardTrainerUITests */,
+				44C93E44224516BD007A68ED /* FlickKeyboardTrainer */,
+				44C93E58224516BF007A68ED /* FlickKeyboardTrainerTests */,
+				44C93E63224516BF007A68ED /* FlickKeyboardTrainerUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -269,7 +269,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				44C93E5E224516BF007A68ED /* SwipeKeyboardTrainerTests.swift in Sources */,
+				44C93E5E224516BF007A68ED /* FlickKeyboardTrainerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,7 +277,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				44C93E69224516BF007A68ED /* SwipeKeyboardTrainerUITests.swift in Sources */,
+				44C93E69224516BF007A68ED /* FlickKeyboardTrainerUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,12 +286,12 @@
 /* Begin PBXTargetDependency section */
 		44C93E5B224516BF007A68ED /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 44C93E44224516BD007A68ED /* SwipeKeyboardTrainer */;
+			target = 44C93E44224516BD007A68ED /* FlickKeyboardTrainer */;
 			targetProxy = 44C93E5A224516BF007A68ED /* PBXContainerItemProxy */;
 		};
 		44C93E66224516BF007A68ED /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 44C93E44224516BD007A68ED /* SwipeKeyboardTrainer */;
+			target = 44C93E44224516BD007A68ED /* FlickKeyboardTrainer */;
 			targetProxy = 44C93E65224516BF007A68ED /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -438,7 +438,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5TDJKU3CGM;
-				INFOPLIST_FILE = SwipeKeyboardTrainer/Info.plist;
+				INFOPLIST_FILE = FlickKeyboardTrainer/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -457,7 +457,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5TDJKU3CGM;
-				INFOPLIST_FILE = SwipeKeyboardTrainer/Info.plist;
+				INFOPLIST_FILE = FlickKeyboardTrainer/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -477,7 +477,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WNHYA375TJ;
-				INFOPLIST_FILE = SwipeKeyboardTrainerTests/Info.plist;
+				INFOPLIST_FILE = FlickKeyboardTrainerTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -487,7 +487,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwipeKeyboardTrainer.app/SwipeKeyboardTrainer";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FlickKeyboardTrainer.app/FlickKeyboardTrainer";
 			};
 			name = Debug;
 		};
@@ -498,7 +498,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WNHYA375TJ;
-				INFOPLIST_FILE = SwipeKeyboardTrainerTests/Info.plist;
+				INFOPLIST_FILE = FlickKeyboardTrainerTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -508,7 +508,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwipeKeyboardTrainer.app/SwipeKeyboardTrainer";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FlickKeyboardTrainer.app/FlickKeyboardTrainer";
 			};
 			name = Release;
 		};
@@ -518,7 +518,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WNHYA375TJ;
-				INFOPLIST_FILE = SwipeKeyboardTrainerUITests/Info.plist;
+				INFOPLIST_FILE = FlickKeyboardTrainerUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -528,7 +528,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = SwipeKeyboardTrainer;
+				TEST_TARGET_NAME = FlickKeyboardTrainer;
 			};
 			name = Debug;
 		};
@@ -538,7 +538,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WNHYA375TJ;
-				INFOPLIST_FILE = SwipeKeyboardTrainerUITests/Info.plist;
+				INFOPLIST_FILE = FlickKeyboardTrainerUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -548,14 +548,14 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = SwipeKeyboardTrainer;
+				TEST_TARGET_NAME = FlickKeyboardTrainer;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		44C93E40224516BD007A68ED /* Build configuration list for PBXProject "SwipeKeyboardTrainer" */ = {
+		44C93E40224516BD007A68ED /* Build configuration list for PBXProject "FlickKeyboardTrainer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				44C93E6B224516BF007A68ED /* Debug */,
@@ -564,7 +564,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		44C93E6D224516BF007A68ED /* Build configuration list for PBXNativeTarget "SwipeKeyboardTrainer" */ = {
+		44C93E6D224516BF007A68ED /* Build configuration list for PBXNativeTarget "FlickKeyboardTrainer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				44C93E6E224516BF007A68ED /* Debug */,
@@ -573,7 +573,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		44C93E70224516BF007A68ED /* Build configuration list for PBXNativeTarget "SwipeKeyboardTrainerTests" */ = {
+		44C93E70224516BF007A68ED /* Build configuration list for PBXNativeTarget "FlickKeyboardTrainerTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				44C93E71224516BF007A68ED /* Debug */,
@@ -582,7 +582,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		44C93E73224516BF007A68ED /* Build configuration list for PBXNativeTarget "SwipeKeyboardTrainerUITests" */ = {
+		44C93E73224516BF007A68ED /* Build configuration list for PBXNativeTarget "FlickKeyboardTrainerUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				44C93E74224516BF007A68ED /* Debug */,

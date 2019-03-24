@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:SwipeKeyboardTrainer.xcodeproj">
+      location = "self:/Users/landon/Developer/SwipeKeyboardTrainer/FlickKeyboardTrainer.xcodeproj">
    </FileRef>
 </Workspace>

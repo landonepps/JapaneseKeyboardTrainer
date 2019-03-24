@@ -1,6 +1,6 @@
 //
 //  ViewController.swift
-//  SwipeKeyboardTrainer
+//  FlickKeyboardTrainer
 //
 //  Created by Landon Epps on 3/22/19.
 //  Copyright © 2019 Landon Epps. All rights reserved.

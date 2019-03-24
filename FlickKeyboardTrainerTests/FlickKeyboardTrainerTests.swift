@@ -1,15 +1,15 @@
 //
-//  SwipeKeyboardTrainerTests.swift
-//  SwipeKeyboardTrainerTests
+//  FlickKeyboardTrainerTests.swift
+//  FlickKeyboardTrainerTests
 //
 //  Created by Landon Epps on 3/22/19.
 //  Copyright © 2019 Landon Epps. All rights reserved.
 //
 
 import XCTest
-@testable import SwipeKeyboardTrainer
+@testable import FlickKeyboardTrainer
 
-class SwipeKeyboardTrainerTests: XCTestCase {
+class FlickKeyboardTrainerTests: XCTestCase {
 
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.
